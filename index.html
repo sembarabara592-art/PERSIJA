@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persija Jakarta - Macan Kemayoran Official Fanite</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        persijaRed: '#E31B23',
+                        persijaDark: '#121212',
+                        persijaOrange: '#F58220'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-persijaDark text-gray-100 font-sans antialiased">
+
+    <!-- Top Bar -->
+    <div class="bg-black text-xs py-2 border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center text-persijaOrange"><i class="fa-solid fa-trophy mr-1"></i> 11x Champions Liga Indonesia</span>
+                <span class="hidden md:inline text-gray-400">| The Jakmania Official Community</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#kontak" class="hover:text-persijaRed transition"><i class="fa-brands fa-whatsapp text-green-500 mr-1"></i> 0857-1488-6412</a>
+                <div class="flex space-x-3">
+                    <a href="#" class="hover:text-persijaRed"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-persijaRed"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="hover:text-persijaRed"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-persijaDark/95 backdrop-blur border-b border-red-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-persijaRed rounded-full flex items-center justify-center shadow-lg shadow-red-900/50 border-2 border-persijaOrange">
+                        <i class="fa-solid fa-shield-halved text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-black tracking-wider text-white">PERSIJA</span>
+                        <span class="block text-xs font-semibold text-persijaOrange tracking-widest">JAKARTA</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 font-semibold text-sm">
+                    <a href="#beranda" class="hover:text-persijaRed transition">Beranda</a>
+                    <a href="#jadwal" class="hover:text-persijaRed transition">Jadwal & Klasemen</a>
+                    <a href="#skuad" class="hover:text-persijaRed transition">Skuad</a>
+                    <a href="#berita" class="hover:text-persijaRed transition">Berita</a>
+                    <a href="#galeri" class="hover:text-persijaRed transition">Galeri</a>
+                    <a href="#kontak" class="bg-persijaRed hover:bg-red-700 text-white px-5 py-2.5 rounded-full transition shadow-md shadow-red-900/40">Hubungi Admin</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-200 focus:outline-none text-2xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-neutral-900 border-b border-neutral-800 px-4 pt-2 pb-5 space-y-3">
+            <a href="#beranda" class="block py-2 hover:text-persijaRed font-medium">Beranda</a>
+            <a href="#jadwal" class="block py-2 hover:text-persijaRed font-medium">Jadwal & Klasemen</a>
+            <a href="#skuad" class="block py-2 hover:text-persijaRed font-medium">Skuad</a>
+            <a href="#berita" class="block py-2 hover:text-persijaRed font-medium">Berita</a>
+            <a href="#galeri" class="block py-2 hover:text-persijaRed font-medium">Galeri</a>
+            <a href="#kontak" class="block text-center bg-persijaRed text-white py-2.5 rounded-lg font-semibold shadow">Hubungi Admin</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="beranda" class="relative bg-gradient-to-r from-neutral-950 via-persijaRed/20 to-neutral-950 py-24 md:py-32 border-b border-red-900/30 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#E31B23_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block bg-persijaRed/20 text-persijaOrange border border-persijaRed/30 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+                🔥 Macan Kemayoran Official Fanite
+            </span>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight mb-6">
+                Satu Jiwa <span class="text-persijaRed underline decoration-persijaOrange">Persija</span>!
+            </h1>
+            <p class="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg mb-10">
+                Situs informasi terlengkap seputar klub kebanggaan Ibukota. Jadwal pertandingan, berita terkini, skuad bintang, dan komunitas The Jakmania.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#jadwal" class="w-full sm:w-auto bg-persijaRed hover:bg-red-700 text-white font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-red-900/50 flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Lihat Jadwal Pertandingan</span>
+                </a>
+                <a href="https://wa.me/6285714886412?text=Halo%20Admin%2C%20saya%20ingin%20bergabung%20atau%20bertanya%20seputar%20Persija." target="_blank" class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-xl transition shadow-lg flex items-center justify-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Chat Admin WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Next Match & Klasemen Section -->
+    <section id="jadwal" class="py-16 bg-neutral-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Next Match Card -->
+                <div class="lg:col-span-2 bg-neutral-900 border border-neutral-800 rounded-2xl p-6 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-persijaRed text-white text-xs px-4 py-1 rounded-bl-xl font-bold uppercase">
+                        Next Match
+                    </div>
+                    <h3 class="text-lg font-bold mb-6 flex items-center text-persijaOrange">
+                        <i class="fa-solid fa-stopwatch mr-2"></i> Pertandingan Selanjutnya
+                    </h3>
+                    
+                    <div class="flex flex-col sm:flex-row items-center justify-between bg-black/40 p-6 rounded-xl border border-neutral-800 gap-6 text-center sm:text-left">
+                        <div class="flex flex-col items-center sm:items-start">
+                            <div class="w-16 h-16 bg-persijaRed/20 rounded-full flex items-center justify-center border border-persijaRed mb-2">
+                                <i class="fa-solid fa-shield-halved text-3xl text-persijaRed"></i>
+                            </div>
+                            <span class="font-extrabold text-lg">PERSIJA JAKARTA</span>
+                            <span class="text-xs text-gray-400">Tuan Rumah</span>
+                        </div>
+
+                        <div class="flex flex-col items-center my-2 sm:my-0">
+                            <span class="text-2xl font-black text-persijaOrange">VS</span>
+                            <span class="text-xs font-bold bg-neutral-800 px-3 py-1 rounded-full mt-2 text-gray-300">Minggu, 19 Okt 2026</span>
+                            <span class="text-xs text-gray-400 mt-1">19:00 WIB • Stadion JIS</span>
+                        </div>
+
+                        <div class="flex flex-col items-center sm:items-end">
+                            <div class="w-16 h-16 bg-blue-600/20 rounded-full flex items-center justify-center border border-blue-500 mb-2">
+                                <i class="fa-solid fa-shield text-3xl text-blue-400"></i>
+                            </div>
+                            <span class="font-extrabold text-lg">LAWAN TANDING</span>
+                            <span class="text-xs text-gray-400">Tim Tamu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Stats / Standings Banner -->
+                <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 flex items-center text-persijaOrange">
+                            <i class="fa-solid fa-ranking-star mr-2"></i> Posisi Klasemen
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center bg-black/40 p-3 rounded-lg border border-neutral-800">
+                                <span class="text-sm text-gray-400">Peringkat</span>
+                                <span class="font-bold text-persijaOrange text-lg">#2 Liga 1</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-black/40 p-3 rounded-lg border border-neutral-800">
+                                <span class="text-sm text-gray-400">Poin</span>
+                                <span class="font-bold text-white text-lg">54 Poin</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-black/40 p-3 rounded-lg border border-neutral-800">
+                                <span class="text-sm text-gray-400">Rekor (M - S - K)</span>
+                                <span class="font-bold text-white">16 - 6 - 4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#kontak" class="mt-6 block text-center bg-neutral-800 hover:bg-neutral-700 text-sm font-bold py-3 rounded-xl transition text-gray-200">
+                        Gabung Diskusi Jakmania
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skuad Utama Section -->
+    <section id="skuad" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-persijaOrange font-bold uppercase tracking-widest text-xs">Pilar Macan Kemayoran</span>
+                <h2 class="text-3xl sm:text-4xl font-black mt-2">SKUAD UTAMA MUSIM INI</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Player 1 -->
+                <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden group hover:border-persijaRed transition">
+                    <div class="h-48 bg-gradient-to-t from-neutral-950 to-neutral-800 flex items-center justify-center relative">
+                        <span class="absolute top-3 left-3 bg-persijaRed text-white text-xs px-2.5 py-1 rounded font-black">#1</span>
+                        <i class="fa-solid fa-user-shield text-7xl text-gray-600 group-hover:text-persijaRed transition"></i>
+                    </div>
+                    <div class="p-5 text-center">
+                        <h4 class="font-extrabold text-lg">Andritany Ardhiyasa</h4>
+                        <p class="text-xs text-persijaOrange font-semibold mt-1">Kiper / Kapten</p>
+                    </div>
+                </div>
+
+                <!-- Player 2 -->
+                <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden group hover:border-persijaRed transition">
+                    <div class="h-48 bg-gradient-to-t from-neutral-950 to-neutral-800 flex items-center justify-center relative">
+                        <span class="absolute top-3 left-3 bg-persijaRed text-white text-xs px-2.5 py-1 rounded font-black">#5</span>
+                        <i class="fa-solid fa-user-ninja text-7xl text-gray-600 group-hover:text-persijaRed transition"></i>
+                    </div>
+                    <div class="p-5 text-center">
+                        <h4 class="font-extrabold text-lg">Rizky Ridho</h4>
+                        <p class="text-xs text-persijaOrange font-semibold mt-1">Bek Tengah</p>
+                    </div>
+                </div>
+
+                <!-- Player 3 -->
+                <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden group hover:border-persijaRed transition">
+                    <div class="h-48 bg-gradient-to-t from-neutral-950 to-neutral-800 flex items-center justify-center relative">
+                        <span class="absolute top-3 left-3 bg-persijaRed text-white text-xs px-2.5 py-1 rounded font-black">#8</span>
+                        <i class="fa-solid fa-user-gear text-7xl text-gray-600 group-hover:text-persijaRed transition"></i>
+                    </div>
+                    <div class="p-5 text-center">
+                        <h4 class="font-extrabold text-lg">Maciej Gajos</h4>
+                        <p class="text-xs text-persijaOrange font-semibold mt-1">Gelandang</p>
+                    </div>
+                </div>
+
+                <!-- Player 4 -->
+                <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden group hover:border-persijaRed transition">
+                    <div class="h-48 bg-gradient-to-t from-neutral-950 to-neutral-800 flex items-center justify-center relative">
+                        <span class="absolute top-3 left-3 bg-persijaRed text-white text-xs px-2.5 py-1 rounded font-black">#9</span>
+                        <i class="fa-solid fa-user-plus text-7xl text-gray-600 group-hover:text-persijaRed transition"></i>
+                    </div>
+                    <div class="p-5 text-center">
+                        <h4 class="font-extrabold text-lg">Gustavo Almeida</h4>
+                        <p class="text-xs text-persijaOrange font-semibold mt-1">Penyerang</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Berita Terbaru -->
+    <section id="berita" class="py-16 bg-neutral-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center mb-12">
+                <div>
+                    <span class="text-persijaOrange font-bold uppercase tracking-widest text-xs">Update Terkini</span>
+                    <h2 class="text-3xl font-black mt-1">BERITA PERSIJA</h2>
+                </div>
+                <a href="#kontak" class="mt-4 sm:mt-0 text-sm font-semibold text-persijaOrange hover:underline">Arsip Berita <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- News 1 -->
+                <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden shadow-lg hover:border-persijaRed transition">
+                    <div class="h-48 bg-neutral-800 flex items-center justify-center text-neutral-600">
+                        <i class="fa-solid fa-newspaper text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs bg-persijaRed/20 text-persijaOrange font-bold px-2.5 py-1 rounded">Tim Utama</span>
+                        <h3 class="font-bold text-lg mt-3 mb-2 hover:text-persijaRed transition">Persija Siapkan Strategi Matang Hadapi Laga Kandang</h3>
+                        <p class="text-gray-400 text-sm mb-4">Tim pelatih fokus membenahi lini serang demi mengamankan tiga poin penuh di hadapan Jakmania.</p>
+                        <span class="text-xs text-gray-500"><i class="fa-regular fa-clock mr-1"></i> 2 jam yang lalu</span>
+                    </div>
+                </div>
+
+                <!-- News 2 -->
+                <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden shadow-lg hover:border-persijaRed transition">
+                    <div class="h-48 bg-neutral-800 flex items-center justify-center text-neutral-600">
+                        <i class="fa-solid fa-flag text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs bg-persijaRed/20 text-persijaOrange font-bold px-2.5 py-1 rounded">The Jakmania</span>
+                        <h3 class="font-bold text-lg mt-3 mb-2 hover:text-persijaRed transition">Aksi Koreografi Spektakuler Siap Disajikan Suporter</h3>
+                        <p class="text-gray-400 text-sm mb-4">Koordinator suporter memastikan koreografi khusus tribun utara telah rampung dan siap ditampilkan.</p>
+                        <span class="text-xs text-gray-500"><i class="fa-regular fa-clock mr-1"></i> Kemarin</span>
+                    </div>
+                </div>
+
+                <!-- News 3 -->
+                <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden shadow-lg hover:border-persijaRed transition">
+                    <div class="h-48 bg-neutral-800 flex items-center justify-center text-neutral-600">
+                        <i class="fa-solid fa-shirt text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs bg-persijaRed/20 text-persijaOrange font-bold px-2.5 py-1 rounded">Merchandise</span>
+                        <h3 class="font-bold text-lg mt-3 mb-2 hover:text-persijaRed transition">Jersey Original Edisi Spesial Resmi Dirilis</h3>
+                        <p class="text-gray-400 text-sm mb-4">Dapatkan jersey resmi terbaru di Persija Store terdekat atau melalui pemesanan online via admin.</p>
+                        <span class="text-xs text-gray-500"><i class="fa-regular fa-clock mr-1"></i> 3 hari yang lalu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Section -->
+    <section id="galeri" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-persijaOrange font-bold uppercase tracking-widest text-xs">Momen Kebersamaan</span>
+            <h2 class="text-3xl font-black mt-2 mb-8">GALERI PERSIJA</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="h-40 bg-neutral-900 border border-neutral-800 rounded-xl flex items-center justify-center text-gray-600 hover:text-persijaRed transition">
+                    <i class="fa-solid fa-image text-3xl"></i>
+                </div>
+                <div class="h-40 bg-neutral-900 border border-neutral-800 rounded-xl flex items-center justify-center text-gray-600 hover:text-persijaRed transition">
+                    <i class="fa-solid fa-image text-3xl"></i>
+                </div>
+                <div class="h-40 bg-neutral-900 border border-neutral-800 rounded-xl flex items-center justify-center text-gray-600 hover:text-persijaRed transition">
+                    <i class="fa-solid fa-image text-3xl"></i>
+                </div>
+                <div class="h-40 bg-neutral-900 border border-neutral-800 rounded-xl flex items-center justify-center text-gray-600 hover:text-persijaRed transition">
+                    <i class="fa-solid fa-image text-3xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Admin WhatsApp -->
+    <section id="kontak" class="py-20 bg-gradient-to-t from-black to-neutral-900 border-t border-red-900/30">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <div class="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl shadow-lg shadow-green-900/50">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black mb-4">HUBUNGI ADMIN KAMI</h2>
+            <p class="text-gray-300 mb-8 text-base">
+                Punya pertanyaan seputar tiket pertandingan, merchandise original, atau ingin bergabung dengan komunitas The Jakmania? Langsung hubungi admin via WhatsApp di bawah ini:
+            </p>
+            <a href="https://wa.me/6285714886412?text=Halo%20Admin%2C%20saya%20ingin%20bertanya%20seputar%20website%20Persija." target="_blank" class="inline-flex items-center space-x-3 bg-green-600 hover:bg-green-700 text-white font-extrabold text-lg px-10 py-4 rounded-2xl transition shadow-xl shadow-green-900/40">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span>WhatsApp: 0857-1488-6412</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-10 border-t border-neutral-900 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-persijaRed rounded-full flex items-center justify-center text-white">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-white tracking-wider">PERSIJA JAKARTA</span>
+                    <p class="text-xs text-gray-500">© 2026 Macan Kemayoran Fanite. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="flex space-x-6 text-lg">
+                <a href="#" class="hover:text-persijaRed transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-persijaRed transition"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-persijaRed transition"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://wa.me/6285714886412" target="_blank" class="hover:text-green-500 transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script untuk Toggle Menu Mobile -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
